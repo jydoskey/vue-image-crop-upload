@@ -220,8 +220,8 @@ $ npm install vue-image-crop-upload
 			'my-upload': myUpload
 		},
 		methods: {
-			toggleShow() {
-				this.show = !this.show;
+			toggleShow(show) {
+				this.show = show; //this outputs the image of choice without giving an error 
 			},
             /**
 			 * crop success
@@ -232,6 +232,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
+				this.field = field; //field has been defined, it ought to be used
 			},
 			/**
 			 * upload success
@@ -298,8 +299,8 @@ $ npm install vue-image-crop-upload
 			'my-upload': myUpload
 		},
 		methods: {
-			toggleShow() {
-				this.show = !this.show;
+			toggleShow(show) {
+				this.show = show;
 			}
 		},
 		events: {
@@ -312,6 +313,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
+				this.field = field;
 			},
 			/**
 			 * upload success
@@ -482,8 +484,8 @@ $ npm install vue-image-crop-upload
 			'my-upload': myUpload
 		},
 		methods: {
-			toggleShow() {
-				this.show = !this.show;
+			toggleShow(show) {
+				this.show = show;
 			}
 		},
 		events: {
@@ -496,6 +498,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
+				this.field = field;
 			},
 			/**
 			 * upload success
@@ -565,8 +568,8 @@ $ npm install vue-image-crop-upload
 			'my-upload': myUpload
 		},
 		methods: {
-			toggleShow() {
-				this.show = !this.show;
+			toggleShow(show) {
+				this.show = show;
 			},
             /**
 			 * crop success
@@ -577,6 +580,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
+				this.field = field;
 			},
 			/**
 			 * upload success
