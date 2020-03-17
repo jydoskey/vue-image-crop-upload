@@ -221,7 +221,7 @@ $ npm install vue-image-crop-upload
 		},
 		methods: {
 			toggleShow(show) {
-				this.show = show; //this outputs the image of choice without giving an error 
+				this.show = !this.show;  
 			},
             /**
 			 * crop success
@@ -232,7 +232,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
-				this.field = field; //field has been defined, it ought to be used
+				this.field = field; //removes the error message field has been defined, it ought to be used
 			},
 			/**
 			 * upload success
@@ -299,8 +299,8 @@ $ npm install vue-image-crop-upload
 			'my-upload': myUpload
 		},
 		methods: {
-			toggleShow(show) {
-				this.show = show;
+			toggleShow() {
+				this.show = !this.show;
 			}
 		},
 		events: {
@@ -313,7 +313,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
-				this.field = field;
+				this.field = field; //removes the error message field has been defined, it ought to be used
 			},
 			/**
 			 * upload success
@@ -484,8 +484,8 @@ $ npm install vue-image-crop-upload
 			'my-upload': myUpload
 		},
 		methods: {
-			toggleShow(show) {
-				this.show = show;
+			toggleShow() {
+				this.show = !this.show;
 			}
 		},
 		events: {
@@ -498,7 +498,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
-				this.field = field;
+				this.field = field; //removes the error message field has been defined, it ought to be used
 			},
 			/**
 			 * upload success
@@ -568,8 +568,8 @@ $ npm install vue-image-crop-upload
 			'my-upload': myUpload
 		},
 		methods: {
-			toggleShow(show) {
-				this.show = show;
+			toggleShow() {
+				this.show = !this.show;
 			},
             /**
 			 * crop success
@@ -580,7 +580,7 @@ $ npm install vue-image-crop-upload
 			cropSuccess(imgDataUrl, field){
 				console.log('-------- crop success --------');
 				this.imgDataUrl = imgDataUrl;
-				this.field = field;
+				this.field = field; //removes the error message field has been defined, it ought to be used
 			},
 			/**
 			 * upload success
